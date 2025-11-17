@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-standard" %}
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_standard-{{ version }}.tar.gz
-  sha256: 74aa7e09183ec94487378a83f3799e0f12e481b3752f45eaab5c9e36fb128aea
+  sha256: d7245f9801a1201b50bc36a8045e8602cbc412b01da161da664276ec22d77ff3
 
 build:
   noarch: python
@@ -38,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-standard for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/standard/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-standard/stable/index.html
   dev_url: https://github.com/apache/airflow/
