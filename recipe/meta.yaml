@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-standard" %}
-{% set version = "1.9.2" %}
+{% set version = "1.10.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_standard-{{ version }}.tar.gz
-  sha256: d7245f9801a1201b50bc36a8045e8602cbc412b01da161da664276ec22d77ff3
+  sha256: e9e7def4b6ee94cee4d871df0c1e9da66411f9d1cd4c3f8b7b8cb88158c18035
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - apache-airflow >=2.10.0
-    - apache-airflow-providers-common-compat >=1.8.0
+    - apache-airflow >=2.11.0
+    - apache-airflow-providers-common-compat >=1.10.0
 
 test:
   imports:
