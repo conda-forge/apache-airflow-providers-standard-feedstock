@@ -24,6 +24,7 @@ requirements:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.13.0
+
 tests:
   - python:
       imports:
